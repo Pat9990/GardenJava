@@ -77,14 +77,14 @@ public class AnimalsReader {
                     }
                     if(animal.equals("dog")){
                         Dog dog = new Dog(animal, name,age,x,y,BreedState,id,ownerID);
-                        if(gender.equals("HE")){dog.setGender(Dog.Gender.HE);System.out.println(gender+"dog");}
+                        if(gender.equals("HE")){dog.setGender(Dog.Gender.HE);}
                         else{dog.setGender(Dog.Gender.SHE);}
                         Dog.addDog(dog);
                     }
                     else{
 
                         Cat cat = new Cat(animal, name,age,x,y,BreedState,id,ownerID);
-                        if(gender.equals("HE")){cat.setGender(Cat.Gender.HE);System.out.println(gender+"cat");}
+                        if(gender.equals("HE")){cat.setGender(Cat.Gender.HE);}
                         else{cat.setGender(Cat.Gender.SHE);}
                         Cat.addCat(cat);
 
